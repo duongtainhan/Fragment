@@ -7,25 +7,15 @@
     tools:context=".MainActivity"
     android:background="#0ff">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:id="@+id/txtMain"/>
-    <fragment
-        android:id="@+id/fragment1"
-        android:name="com.example.duongtainhan555.fragment.FragmentA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtMain"
-        android:layout_marginTop="30dp"/>
-    <fragment
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragment2"
-        android:name="com.example.duongtainhan555.fragment.FragmentB"
-        android:layout_below="@id/fragment1"
-        android:layout_marginTop="30dp"/>
+        android:textSize="20sp"
+        android:id="@+id/btnChange"/>
+    <FrameLayout
+        android:layout_below="@id/btnChange"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:id="@+id/frameContent"/>
 </RelativeLayout>
