@@ -10,10 +10,21 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:id="@+id/btnChange"/>
+        android:textSize="12sp"
+        android:text="@string/change_a"
+        android:id="@+id/btnChangeA"
+        android:onClick="ChangeFragment"/>
+    <Button
+        android:onClick="ChangeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_b"
+        android:id="@+id/btnChangeB"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/btnChangeA"
+        android:layout_marginLeft="10dp"/>
     <FrameLayout
-        android:layout_below="@id/btnChange"
+        android:layout_below="@id/btnChangeA"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp"
